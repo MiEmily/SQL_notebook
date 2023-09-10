@@ -24,6 +24,6 @@ order by count(occupation),occupation asc;
 note: 
 selec concat (string1, string2, ...): merge string
 
-group by x: put all those same values for x in the same row
-
+group by x: put all those same values for x in the same row.All column names from the SELECT clause should either appear in the GROUP BY clause or be used in the aggregate functions. 
+        
 */
