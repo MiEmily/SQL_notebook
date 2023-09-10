@@ -11,3 +11,19 @@ where [occupation_count] is the number of occurrences of an occupation in OCCUPA
 
 --solution
 
+select concat(name,'(',right(name,1),')')
+from occupations
+order by name asc;
+
+select concat('There are a total of',' ',count(occupation),' ',occupation,'s.')
+from occupations
+group by occupation
+order by count(occupation),occupation asc; 
+
+/*
+note: 
+selec concat (string1, string2, ...): merge string
+
+group by x: put all those same values for x in the same row
+
+*/
